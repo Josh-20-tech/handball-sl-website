@@ -1,0 +1,154 @@
+body{
+    background-color:rgba(218, 209, 209, 0.993);
+    color: black;
+}
+
+header{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 2px 5px white;
+    height: 150px;
+}
+
+details, a{
+    text-decoration: none;
+    font-size: larger;
+    display: block;
+    background: transparent;
+    color: black;
+    margin-top: 5px; 
+}
+
+details{
+    padding: 3px;
+    width: 50px;
+    box-shadow: 0 0 15px white;
+    background-color: white;
+}
+details[open]{
+    width: 130px;
+    height: 140px;
+    background-color: white;
+}
+summary{
+    font-size: x-large;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+}
+.logo{
+    width: 50px;
+}
+
+
+.section1{
+    margin-top: 5rem;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+    border-bottom: 13px solid rgba(0, 0, 0, 0.39);
+}
+
+.pic{
+    width: 100px;
+    animation-name: roll;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes roll {
+    from{
+        transform: rotate(360deg);
+    }
+}
+
+.left{
+    width: 350px;
+    margin-left: 5rem;
+}
+
+.right{
+    justify-content: right;
+    align-items: center;
+}
+
+h1{
+    font-size: 50px;
+}
+
+p{
+    line-height: 1.5;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.section2{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.pp{
+    width: 600px;
+    height: 400px;
+    border: 12px groove black;
+}
+
+button{
+    width: 300px;
+    height: 70px;
+    font-size: x-large;
+    background-color: rgba(44, 36, 26, 0.459);
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .section1{
+        display:block;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        border: none;
+        gap: 5px;
+        /* border-bottom: 13px solid rgba(0, 0, 0, 0.267); */
+    }
+    .left{
+        margin: 0;
+        margin-left: 2rem;
+        font-size: medium;
+    }
+    .fa-brands{
+        margin-top: 0;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+    .section2{
+        display: block;
+        margin-top: 2rem;
+        justify-content: space-between;
+    }
+    .right2{
+        text-align: center;
+    }
+    .pp{
+        width: 250px;
+    }
+}

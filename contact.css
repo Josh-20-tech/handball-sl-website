@@ -1,0 +1,131 @@
+body{ 
+    margin: 0;
+    padding: 0;
+    background-color:dimgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+section{
+    display: flex;
+    color: white;
+    height: 100vh;
+}
+
+.left{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+p{
+    font-size: x-large;
+    line-height: 1.5;
+}
+strong{
+    display: block;
+    margin-top: 3rem;
+    font-size: larger;
+    border-bottom: 2px solid rgba(255, 68, 0, 0.281);
+}
+
+.right{
+    padding: 5px;
+    margin-left: 2rem;
+    width: 100%;
+    text-align: center;
+}
+label{
+    display: block;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+input{
+    width:400px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: larger;
+    outline: none;
+    background-color: rgba(105, 105, 105, 0.11);
+    border: 3px solid gainsboro;
+    color: white;
+    padding: 5px;
+}
+textarea{
+    resize: none;
+    width: 400px;
+    height: 200px;
+    outline: none;
+    background-color: rgba(105, 105, 105, 0.027);
+    border: 3px solid gainsboro;
+    color: white;
+    padding: 5px;
+    font-size: larger;
+}
+button{
+    width: 410px;
+    font-size: larger;
+    background-color: gainsboro;
+    color: black;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+}
+.link{
+    display: flex;
+    font-size:x-large;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-top: 3rem;
+    width: 100%;
+    padding: 5px;
+}
+
+    iframe{
+        width: 100%;
+    }
+
+@media screen and (max-width:600px) {
+    section{
+        display: block;
+        width: 100%;
+    }
+    .link{
+        display: block;
+        font-size:60px;
+        height: 100vh;
+    }
+    p{
+        text-align: center;
+        font-size: larger;
+        padding: 4px;
+    }
+    
+    .right{
+        height: 100vh;
+    }
+    input{
+        width: 300px;
+    }
+    textarea{
+        width: 300px;
+    }
+    button{
+        width: 300px;
+        display: block;
+        margin: auto;
+    }
+    .map{
+        margin-top: 2rem;
+        display: block;
+        
+    }
+    iframe{
+        border: 5px solid black;
+    }
+    a, i{
+        text-decoration: none;
+        color:whitesmoke;
+    }
+
+}
