@@ -18,6 +18,7 @@ h1{
     font-size: 60px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 button{
     width: 200px;
     height: 50%;
@@ -98,4 +99,8 @@ p{
    .gall{
     width: 300px;
    } 
+    .ppx{
+        display: block;
+        margin: 1rem;
+    }
 }
